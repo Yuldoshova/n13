@@ -1,0 +1,3 @@
+//Homework
+MongoDB orqali imtihonda berilgan modellar uchun CRUD yaratib kelish. 
+Shuningdek, kerakli fieldlar uchun Index yaratib kelish!

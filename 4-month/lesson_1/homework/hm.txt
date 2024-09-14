@@ -1,0 +1,1 @@
+TypeScriptni takrorlash va tiplarni o’rganib kelish

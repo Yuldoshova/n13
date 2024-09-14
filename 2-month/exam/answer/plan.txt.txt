@@ -1,0 +1,19 @@
+-jarayonni tushunish;
+-query yozish;
+-aqlli qidiruvni productda qo'shish;
+-postmandan so'rovlarni yozib chiqish;
+-hamma apilarni tekshirish;
+-projectni polniy to'g'irlab chiqish;
+-auth qismini qo'shish;
+-commentlar yozish (Loyida har bir qismdagi tushunarli kommentlar keltirilishi);
+-SQL dagi  funksiya, view, trigger, index, procedure kabi clause lardan foydalanish;
+
+
+CONTRACTS
+customer_id : 1 (keladi)
+order_item_id : 7 (keladi)
+contract_type_id:1 (keladi) || null
+isFinished: false ( o'zimiz)
+started_payment_percentage: 25 || 0
+total_payment: order_items.total_price*(contract_types.percentage+100)/100
+monthly_payment: total_payment/contract_types.duration

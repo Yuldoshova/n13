@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.value {
+    position: relative;
+    z-index: 1;
+    background-color: #ff6f61;
+    border-radius: 5%;
+    color: white;
+    font-size: 80px;
+    margin: 0 50px;
+    padding: 80px 100px;
+    font-weight: bold
+}
+
+.btn-minus{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    border: 5px solid #ff6f61;
+    border-radius: 10%;
+    color: #ff6f61;
+    padding: 10px 23px;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 280px;
+    font-weight: bold
+}
+
+.btn-plus{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    border: 5px solid #ff6f61;
+    border-radius: 10%;
+    color: #ff6f61;
+    padding: 10px 20px;
+    font-size: 40px;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 280px;
+    margin-left: 260px;
+    font-weight: bold
+}
+
+.reset {
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    border: 5px solid #ff6f61;
+    border-radius: 10%;
+    color: #ff6f61;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 450px;
+    font-weight: bold
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #f7867b;
+}

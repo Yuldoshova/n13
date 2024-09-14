@@ -1,0 +1,3 @@
+1) Videoni qaytadan ko’rish HTML bo’yicha izlanish va mustaqil o’rganish VS code va Google Chrome dasturlarini o’rnatish 
+Yangi ma’lumotlarni kundalikka yoki qaydnomalarga kiritish Darsga o’z vaqtida kelish 
+2) O'zingiz haqingizda ma'lumotnomaga o'xshash sodda sayt yaratish. (Dizayn o'ziz xohlagancha qilinadi)

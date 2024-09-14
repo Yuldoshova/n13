@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Kitob o'qish 20 sahifa"
+    },
+    {
+        "id": 2,
+        "title": "Dasturlash bilan shug'ullanish"
+    },
+    {
+        "id": 3,
+        "title": "English bilan shug'ullanish"
+    },
+    {
+        "title": "test uchun",
+        "id": 4
+    },
+    {
+        "title": "test uchun",
+        "id": 5
+    }
+]

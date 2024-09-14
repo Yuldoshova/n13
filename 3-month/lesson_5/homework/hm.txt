@@ -1,0 +1,2 @@
+//Homework
+Shaxsiy loyihani optimallashtiramiz va yaxshilaymiz. Qolgan qismlarini yaratamiz Loyihaga xavfsizlik ya’ni auth qismini qo’shamiz! Darsda o’tilganlarni loyihamizga qo’shamiz. Qo’shimcha darsdagi loyihani mustaqil bajaramiz.

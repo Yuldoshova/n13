@@ -1,0 +1,2 @@
+//Homework
+Shaxsiy loyihani optimallashtiramiz va yaxshilaymiz. Qolgan qismlarini yaratamiz Loyihaga error handling, bcrypt, app.all() qismlarini qo’shamiz! Darsda o’tilganlarni loyihamizga qo’shamiz. Qo’shimcha darsdagi loyihani mustaqil bajaramiz.

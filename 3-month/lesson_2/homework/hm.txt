@@ -1,0 +1,2 @@
+//Homework
+Mongoose orqali hamma o’zi tanlagan loyihaga CRUD qismini qilish (kamida 1ta model uchun)
