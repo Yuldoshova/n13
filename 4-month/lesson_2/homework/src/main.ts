@@ -12,19 +12,54 @@ class Animal {
 
 class Dog extends Animal {
 
-    constructor(name: string) {
+    public color: string
+
+    constructor(name: string, color: string) {
         super(name)
         this.name = name
+        this.color = color
     }
 
     public override makeSound(): void {
-        console.log(`${this.name} huradi.`)
+        console.log(`${this.name} huradi. Uning rangi ${this.color}`)
     }
 }
 
-const dog = new Dog('It')
-dog.makeSound()
+class Cat extends Animal {
+    private age: number
 
+    constructor(name: string, age: number) {
+        super(name)
+        this.name = name
+        this.age = age
+    }
+
+    public override makeSound(): void {
+        console.log(`${this.name} miyovlaydi. Uning yoshi ${this.age}`)
+    }
+}
+
+class Horse extends Animal {
+    private owner: string
+
+    constructor(name: string, owner: string) {
+        super(name)
+        this.name = name
+        this.owner = owner
+    }
+
+    public override makeSound(): void {
+        console.log(`${this.name} miyovlaydi. Uning egasining ismi ${this.owner}`)
+    }
+}
+
+
+const dog = new Dog('It', 'white')
+const cat = new Cat('Mosh', 10)
+const horse = new Horse("Tom", 'John Doe')
+dog.makeSound()
+cat.makeSound()
+horse.makeSound()
 
 
 abstract class Shape {

@@ -1,0 +1,2 @@
+TypeScriptni takrorlash darsda berilgan amaliyotlarni barchasini bajarib kelish. 
+Many to many -> student va group bog'langan sequelize loyiha

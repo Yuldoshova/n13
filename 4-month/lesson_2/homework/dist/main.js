@@ -8,16 +8,41 @@ class Animal {
     }
 }
 class Dog extends Animal {
-    constructor(name) {
+    constructor(name, color) {
         super(name);
         this.name = name;
+        this.color = color;
     }
     makeSound() {
-        console.log(`${this.name} huradi.`);
+        console.log(`${this.name} huradi. Uning rangi ${this.color}`);
     }
 }
-const dog = new Dog('It');
+class Cat extends Animal {
+    constructor(name, age) {
+        super(name);
+        this.name = name;
+        this.age = age;
+    }
+    makeSound() {
+        console.log(`${this.name} miyovlaydi. Uning yoshi ${this.age}`);
+    }
+}
+class Horse extends Animal {
+    constructor(name, owner) {
+        super(name);
+        this.name = name;
+        this.owner = owner;
+    }
+    makeSound() {
+        console.log(`${this.name} miyovlaydi. Uning egasining ismi ${this.owner}`);
+    }
+}
+const dog = new Dog('It', 'white');
+const cat = new Cat('Mosh', 10);
+const horse = new Horse("Tom", 'John Doe');
 dog.makeSound();
+cat.makeSound();
+horse.makeSound();
 class Shape {
     constructor(name) {
         this.name = name;
