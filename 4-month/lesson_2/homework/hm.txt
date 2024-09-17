@@ -1,0 +1,4 @@
+Animal nomli bazaviy klass yarating, unda makeSound nomli metod bo‘lsin. 
+Dog nomli subclass(meros) yarating, u Animal klassidan meros olsin va makeSound metodini qayta yozsin(override). 
+Shape nomli abstrakt klass yarating, unda getArea metodini deklaratsiya qiling. 
+Rectangle nomli meros klass yarating, unda getArea metodini ishlating

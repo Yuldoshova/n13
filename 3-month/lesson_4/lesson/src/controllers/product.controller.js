@@ -9,9 +9,12 @@ class ProductController {
 
     getAllProducts = async (req, res) => {
 
-    let dbQuery= this.#_modelProduct.find()
+        let dbQuery = this.#_modelProduct.find()
 
-    const products =await dbQuery
+        const limit = req.query.limit
+        const offset = req.query.page * limit
+
+        const products = await dbQuery.limit(10).skip(9)
 
         return res.status(200).send({
             message: "Success",
