@@ -27,7 +27,7 @@ dog.makeSound()
 
 
 
-class Shape {
+abstract class Shape {
     protected name: string
 
     constructor(name: string) {
