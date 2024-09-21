@@ -1,0 +1,19 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -w",
+    "start": "nodemon dist/main.js",
+    "start:dev": "tsc src/main.ts && nodemon dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.6"
+  }
+}
