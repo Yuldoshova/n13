@@ -1,0 +1,2 @@
+Typescript va Express ni yoki NestJS ni qo’shib sodda Do’kon (market) va branch (do’kon filiali) uchun CRUD yozib kelish. 
+NestJS ni takrorlab mustaqil o’rganish.
