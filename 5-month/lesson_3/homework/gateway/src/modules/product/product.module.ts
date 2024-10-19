@@ -8,4 +8,4 @@ import { CategoryClient } from '../category';
   controllers: [ProductController],
   providers: [ProductService, ProductClient, CategoryClient],
 })
-export class ProductModule { }
+export class ProductModule {}

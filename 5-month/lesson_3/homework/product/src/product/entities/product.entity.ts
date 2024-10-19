@@ -16,7 +16,7 @@ export class Product {
     count: number
 
     @Column({ name: "category_id", type: "int", nullable: true, })
-    categoryId: number
+    category_id: number
 
     @CreateDateColumn({ name: 'created_at' })
     createdAt: Date

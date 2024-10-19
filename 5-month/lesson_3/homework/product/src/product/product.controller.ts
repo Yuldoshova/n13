@@ -6,7 +6,7 @@ import { MessagePattern, Payload } from '@nestjs/microservices';
 
 @Controller('product')
 export class ProductController {
-  constructor(private readonly productService: ProductService) {}
+  constructor(private readonly productService: ProductService) { }
 
   @MessagePattern('createProduct')
   create(@Payload() createProductDto: CreateProductDto) {
@@ -21,6 +21,13 @@ export class ProductController {
   @MessagePattern('getSingleProduct')
   findOne(@Payload() id: number) {
     return this.productService.findOne(id);
+  }
+
+  @MessagePattern('getAllProductsByCategoryId')
+  findAllProductsByCategoryId(
+    @Payload() id: number
+  ) {
+    return this.productService.findProductsByCategoryId(id);
   }
 
   @MessagePattern('updateProduct')

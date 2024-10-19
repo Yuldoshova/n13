@@ -15,12 +15,10 @@ export class ProductService {
 
   async create(create: CreateProductDto) {
     const newProduct = new Product()
-    console.log(newProduct)
     newProduct.title = create.title,
       newProduct.price = create.price,
       newProduct.count = create.count,
-      newProduct.categoryId = create.categoryId
-      console.log(newProduct)
+      newProduct.category_id = create.categoryId
     return await this.productRepo.save(newProduct)
   }
 
@@ -32,12 +30,20 @@ export class ProductService {
     return await this.productRepo.findBy({ id });
   }
 
+  async findProductsByCategoryId(categoryId: number) {
+    return await this.productRepo.find({
+      where: {
+        category_id: categoryId
+      }
+    })
+  }
+
   update(update: UpdateProductDto) {
     return this.productRepo.update(update.id, {
       title: update.title,
       price: update.price,
       count: update.count,
-      categoryId: update.categoryId
+      category_id: update.categoryId
     });
   }
 

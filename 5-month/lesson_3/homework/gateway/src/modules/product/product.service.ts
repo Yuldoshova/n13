@@ -7,11 +7,10 @@ import { firstValueFrom } from 'rxjs';
 
 @Injectable()
 export class ProductService {
-
   constructor(
     private productClient: ProductClient,
-    private categoryClient: CategoryClient
-  ) { }
+    private categoryClient: CategoryClient,
+  ) {}
 
   async create(create: CreateProductDto) {
     const category = await firstValueFrom(
@@ -28,14 +27,18 @@ export class ProductService {
   }
 
   findOne(id: number) {
-    return this.productClient.getProduct(id)
+    return this.productClient.getProduct(id);
+  }
+
+  allProductsByCategoryId(categoryId: number) {
+    return this.productClient.getProductsByCategoryId(categoryId);
   }
 
   update(update: UpdateProductDto) {
-    return this.productClient.updateOneProduct(update)
+    return this.productClient.updateOneProduct(update);
   }
 
   remove(id: number) {
-    return this.productClient.removeProduct(id)
+    return this.productClient.removeProduct(id);
   }
 }
