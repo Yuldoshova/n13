@@ -1,0 +1,6 @@
+MICROSERVICENI TAKRORLASH
+
+1. Productlar uchun microservice yaratish
+2. Product microserviceda yangi database va typeORM dan foydalanish
+3. Category CRUDni yakunlash
+4. Category get qilganda Productlari bilan olib kelish
