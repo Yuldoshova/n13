@@ -22,8 +22,6 @@ export class CategoryService {
 
   async findOne(id: number) {
     const findCategory = await this.categoryModel.findByPk(id)
-    console.log(findCategory)
-    console.log(!findCategory)
 
     if (!findCategory) {
       throw new NotFoundException("Category not found!")
