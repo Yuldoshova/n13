@@ -1,0 +1,4 @@
+1. Product service CRUDni yakunlash
+2. User serviseni qo'shib kelish
+
+Database diagram =>> https://drawsql.app/teams/n13-1/diagrams/online-shop-microservice

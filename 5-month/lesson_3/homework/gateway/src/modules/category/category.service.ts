@@ -24,7 +24,6 @@ export class CategoryService {
       const products = await firstValueFrom(
         this.productClient.getProductsByCategoryId(category.id),
       );
-      console.log(products);
       category.products = products;
     }
     return categories;
