@@ -1,7 +1,7 @@
 Chat loyihasi
-  1.Login va register qismi bo'lishi kerak
+  1. Login va register qismi bo'lishi kerak
   2. Kim yozayotganligi ko'rinishi kerak, agar ular ko'p bo'lsa: misol: Ali, Akbar, Sanjar ... typing...
   3. BackEnd database postgres va Prisma ORM orqali qilinishi kerak
   4. Authda JWT ishlatilinishi kerak
-  5. FrontEnd yaxshi bo'lish kerak
+  5. FrontEnd yaxshi bo'lishi kerak
   6. Hamma ma'lumot databasega saqlanishi kerak
