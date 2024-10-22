@@ -1,5 +1,0 @@
-export * from './dtos'
-export * from './localization.client'
-export * from './localization.service'
-export * from './localization.controller'
-export * from './localization.module'
