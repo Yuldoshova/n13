@@ -25,29 +25,42 @@
         const socket = io("http://localhost:3000/")
 
         socket.on('typing', data => {
-            console.log(data)
+            const typingEl = document.querySelector(".typing-el")
+            typingEl.classList.remove("d-none")
+            typingEl.textContent = `${data.user} yozyapti...`
         })
 
         socket.on('joined', data => {
-            console.log(data)
+            const cardBodyEl = document.querySelector(".card-body")
+
+            cardBodyEl.insertAdjacentHTML("beforeend", `
+                <div class="divider d-flex align-items-center mb-4">
+                  <p class="text-center mx-3 mb-0" style="color: #a2aab7">
+                    ${data.user} guruhga qo'shildi
+                  </p>
+                </div>`)
+
         })
 
         function handleForm(e) {
-            e.preventDefault()
+            // e.preventDefault()
+
             const name = e.name.value
+
+            localStorage.setItem("user", name)
 
             if (!name) {
                 return alert("Please enter your name")
             }
 
             socket.emit('joined', { user: name })
-            document.querySelector("form").reset()
+            // document.querySelector("form").reset()
         }
 
         function handleTyping(e) {
             const text = e.value
             const user = "Tom"
-            socket.emit("typing", { user })
+            socket.emit("typing", { user: localStorage.getItem("user") })
         }
     </script>
 
@@ -55,11 +68,13 @@
 </head>
 
 <body>
-    <form onsubmit="handleForm(this)">
-        <input type="text" placeholder="Enter your name" name="name">
-        <button type="submit">SUBMIT</button>
-    </form>
-
+    <div class="row d-flex justify-content-center p-4">
+        <h2 class="text-center">Ismingizni kiriting</h2>
+        <form onsubmit="handleJoinForm(this)" class="w-50 d-flex gap-3 p-3">
+            <input class="form-control" type="text" placeholder="Enter your name" name="name">
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+    </div>
     <section>
         <div class="container py-5">
 
@@ -69,28 +84,30 @@
                     <div class="card" id="chat2">
                         <div class="card-header d-flex justify-content-between align-items-center p-3">
                             <h5 class="mb-0">Chat</h5>
+                            <p class="typing-el py-1 px-3 m-0 bg-success text-white rounded-3 d-none">Kimdir yozyapti...
+                            </p>
+
                             <button type="button" data-mdb-button-init data-mdb-ripple-init
                                 class="btn btn-primary btn-sm" data-mdb-ripple-color="dark">Let's Chat
                                 App</button>
                         </div>
-                        <div class="card-body" data-mdb-perfect-scrollbar-init
-                            style="position: relative; height: 400px">
+                        <div class="card-body p-3" data-mdb-perfect-scrollbar-init
+                            style="position: relative; height: 400px;  overflow-y: scroll;">
 
                             <div class="d-flex flex-row justify-content-start">
-                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
                                     alt="avatar 1" style="width: 45px; height: 100%;">
                                 <div>
                                     <p class="small p-2 ms-3 mb-1 rounded-3 bg-body-tertiary">Hi</p>
                                     <p class="small p-2 ms-3 mb-1 rounded-3 bg-body-tertiary">How are you ...???
+                                        Hi, What are you doing tomorrow? Can we come up a bar?
                                     </p>
-                                    <p class="small p-2 ms-3 mb-1 rounded-3 bg-body-tertiary">What are you doing
-                                        tomorrow? Can we come up a bar?</p>
-                                    <p class="small ms-3 mb-3 rounded-3 text-muted">23:58</p>
+                                    <p class="small ms-3 mb-3 rounded-3 text-muted">23:58. Ismi: </p>
                                 </div>
                             </div>
 
                             <div class="divider d-flex align-items-center mb-4">
-                                <p class="text-center mx-3 mb-0" style="color: #a2aab7;">Today</p>
+                                <p class="text-center mx-3 mb-0" style="color: #a2aab7;">Kimdir guruhga qo'shildi</p>
                             </div>
 
                             <div class="d-flex flex-row justify-content-start mb-4">

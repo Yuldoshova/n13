@@ -12,12 +12,12 @@ export class ChatService {
 
     @SubscribeMessage('typing')
     handleTyping(@MessageBody() data: any, @ConnectedSocket() client: Socket) {
-        client.broadcast.emit('typing', `${data.user} is typing F`)
+        client.broadcast.emit('typing', { user: data.user })
     }
 
     @SubscribeMessage('joined')
     handleJoin(@MessageBody() data: any) {
-        this.server.emit('joined', `${data.user} is joined`)
+        this.server.emit('joined', { user: data.user })
     }
 
 }
