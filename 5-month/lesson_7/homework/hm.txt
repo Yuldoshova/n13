@@ -1,5 +1,3 @@
-Chat loyihasi
-   LOGIN VA REGISTER BO'LISHI KERAK
-   KIRGANDA KIM QO'SHILGANI BARCHAGA KO'RINSIN
-   TYPING KO'RINSIN
-   MESSAGELAR DATABASEGA SAQLANSIN
+Loyihaga multilanguage qismini qo'shib kelish
+   1. Product uchun
+   2. Category uchun multilanguage qismini qo'shib kelish
