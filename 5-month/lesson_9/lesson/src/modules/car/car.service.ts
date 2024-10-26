@@ -24,11 +24,9 @@ export class CarService {
     return this.cars.find((car) => car.id == id)
   }
 
-  async createCar(payload: CreateCarDto) {
-    console.log(this.cars.at(-1))
+   createCar(payload: CreateCarDto) {
     const newCar = {
-      // id: this.cars.at(-1) + 1,
-      id: 2,
+      id: this.cars.at(-1).id + 1,
       brand: payload.brand,
       price: payload.price,
       color: payload.color,
