@@ -1,0 +1,1 @@
+Database diagram => https://drawsql.app/teams/my-team-2316/diagrams/online-shop-by-microservices
