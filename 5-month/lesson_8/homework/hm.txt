@@ -1,0 +1,3 @@
+Passport JS orqali Google Auth ni loyihaga qo'shish
+Multilanguageni tugatib kelish
+Loyihaga exception handler qo'shish
