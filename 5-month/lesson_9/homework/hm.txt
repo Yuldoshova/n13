@@ -1,0 +1,1 @@
+GraphQL orqali car loyihasini davom ettirish, to'liq CRUD qilish
