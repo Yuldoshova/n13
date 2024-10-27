@@ -1,0 +1,1 @@
+Istalgan bajarilgan loyihaga dockerni qo'shib kelish
