@@ -1,1 +1,0 @@
-GraphQL da Schema first approach orqali, chat loyihasini backend qismini qilib kelish
