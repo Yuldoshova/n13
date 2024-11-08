@@ -1,0 +1,3 @@
+Redisni takrorlash va amaliyotda qo'llash
+
+answer => https://github.com/Yuldoshova/movie_app.git
